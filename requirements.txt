@@ -1,0 +1,11 @@
+openai
+mcp
+uvicorn
+python-dotenv
+python-multipart
+pydantic
+pillow
+httpx
+tenacity
+pytest
+pytest-asyncio

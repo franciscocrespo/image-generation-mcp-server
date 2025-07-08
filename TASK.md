@@ -5,24 +5,24 @@ Este documento organiza las tareas necesarias para implementar el servidor MCP q
 ## Bloque 1: Configuración Inicial del Proyecto
 
 1. **Configuración del entorno de desarrollo**
-   - [ ] Crear archivo `requirements.txt` con las dependencias necesarias
-   - [ ] Crear estructura básica de directorios según el diseño propuesto
-   - [ ] Configurar archivo `.env.example` para las variables de entorno (API keys)
-   - [ ] Crear un README.md con instrucciones básicas
+   - [x] Crear archivo `requirements.txt` con las dependencias necesarias
+   - [x] Crear estructura básica de directorios según el diseño propuesto
+   - [x] Configurar archivo `.env.example` para las variables de entorno (API keys)
+   - [x] Crear un README.md con instrucciones básicas
 
 2. **Configuración de gestión de secretos**
-   - [ ] Implementar `config.py` para cargar variables de entorno
-   - [ ] Configurar manejo seguro de API keys para OpenAI
+   - [x] Implementar `config.py` para cargar variables de entorno
+   - [x] Configurar manejo seguro de API keys para OpenAI
 
 ## Bloque 2: Implementación de Servicios Base
 
 1. **Cliente OpenAI**
-   - [ ] Crear wrapper asíncrono para el SDK de OpenAI en `services/openai_client.py`
-   - [ ] Implementar manejo de errores y reintentos para llamadas a la API
-   - [ ] Añadir logging para monitoreo de llamadas
+   - [x] Crear wrapper asíncrono para el SDK de OpenAI en `services/openai_client.py`
+   - [x] Implementar manejo de errores y reintentos para llamadas a la API
+   - [x] Añadir logging para monitoreo de llamadas
 
 2. **Estructura del Servidor MCP**
-   - [ ] Implementar `app.py` con la configuración básica de [FastMCP](https://github.com/modelcontextprotocol/python-sdk)
+   - [x] Implementar `app.py` con la configuración básica de [FastMCP](https://github.com/modelcontextprotocol/python-sdk)
    Ejemplo:
    ```python
    from mcp.server.fastmcp import FastMCP
@@ -30,7 +30,7 @@ Este documento organiza las tareas necesarias para implementar el servidor MCP q
    # Create an MCP server
    mcp = FastMCP("Demo")
    ```
-   - [ ] Configurar Uvicorn como servidor ASGI en `main.py`
+   - [x] Configurar Uvicorn como servidor ASGI en `main.py`
 
 ## Bloque 3: Desarrollo de Herramientas MCP
 
